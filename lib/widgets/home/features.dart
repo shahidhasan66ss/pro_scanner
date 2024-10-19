@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:pro_scanner/pages/create_code.dart';
-import 'package:pro_scanner/pages/open_files.dart';
+import 'package:pro_scanner/pages/create_business_card.dart';
 
 import '../../pages/scan_code.dart';
 import '../../pages/ocr_scan.dart';
@@ -62,10 +62,10 @@ class FeaturesGrid extends StatelessWidget {
           iconColor: Colors.green,
         ),
         feature_grid_tems(
-          itemName: "Open Here",
-          itemIcon: Icons.file_open,
+          itemName: "Create  Business Card",
+          itemIcon: Icons.wifi,
           onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => OpenFiles(),));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => CreateBusinessCard(),));
           },
           gradientColors: [Colors.blue, Colors.lightBlue],
           iconColor: Colors.lightBlueAccent,
@@ -131,6 +131,7 @@ class feature_grid_tems extends StatelessWidget {
                 SizedBox(height: 10.0),
                 Center(
                   child: Text(
+                    textAlign: TextAlign.center,
                     itemName,
                     style: TextStyle(
                       fontSize: 16.0,

@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:pro_scanner/pages/save_screen/widget/saved_page.dart';
 
 import '../widgets/home/top_nav.dart';
 import '../widgets/home/features.dart';
@@ -100,8 +101,8 @@ class _HomePageState extends State<HomePage> {
                   padding: const EdgeInsets.all(30.0),
                   child: _activeMenu == 'Features'
                       ? FeaturesGrid()
-                      : _activeMenu == 'Settings'
-                      ? SettingsWidget()
+                      : _activeMenu == 'Saved'
+                      ? SavedPage()
                       : ProfileWidget(),
                 ),
               ),
